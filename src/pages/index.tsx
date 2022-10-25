@@ -106,11 +106,11 @@ const Home: NextPage = () => {
                     <Image width={525} height={981} src="/images/vfs.png" alt="" />
                 </div>
                 <div className="mx-auto flex flex-col items-center justify-center p-4 py-36">
-                    <h1 className="text-4xl font-bold leading-normal text-gray-dark md:text-[3rem]">
+                    <h1 className="text-3xl font-bold leading-normal text-gray-dark md:text-[3rem]">
                         Get in with your phone
                     </h1>
                     <p className="text-xl md:text-2xl md:leading-normal max-w-md text-center text-gray-midtone mb-8 mt-2">
-                        Manage and scane your tickets with ease.
+                        Manage and scan tickets with ease.
                     </p>
                     <Image width={525} height={981} src="/images/scanning.png" alt="" />
                 </div>                            
