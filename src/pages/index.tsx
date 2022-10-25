@@ -124,7 +124,7 @@ const Home: NextPage = () => {
                 </Parallax>
                 <div className="mx-auto bg-sg-gold-light-24 flex min-h-[85vh] flex-col items-center justify-center p-4">
                     <h1 className="text-5xl font-bold leading-normal text-gray-dark md:text-[5rem]">
-                        Let's Go
+                        Let&#39;s Go
                     </h1>
                     <div className="rounded-md shadow mt-8">
                         <a
