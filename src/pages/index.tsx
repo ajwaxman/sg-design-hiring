@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import Image from "next/image"
 import Head from "next/head";
-import Parallax from "./components/parallax";
 
 const incentives = [
     {
@@ -67,61 +66,54 @@ const Home: NextPage = () => {
                         </h2>
                         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-y-16 px-8 gap-x-16 lg:max-w-none lg:grid-cols-3">
                             {incentives.map((incentive) => (
-                                <Parallax key={incentive.name}>
-                                    <div className="text-center lg:block lg:text-center">
-                                        {/* <div className="sm:flex-shrink-0">
-                                        <div className="flow-root">
-                                            <Image width={100} height={100} src={incentive.imageSrc} alt=""/>
-                                        </div> 
-                                    </div> */}
-                                        <div className="sm:flex-shrink-0">
-                                            <div className="bg-white w-16 h-16 sm:w-20 sm:h-20 drop-shadow-sm rounded-2xl flex items-center">
-                                                <div className="text-3xl sm:text-4xl mx-auto">{incentive.emoji}</div>
-                                            </div>
-                                        </div>
-                                        <div className="mt-4 sm:mt-6 lg:mt-8 lg:ml-0">
-                                            <h3 className="text-2xl text-left font-medium text-gray-dark">{incentive.name}</h3>
-                                            <p className="mt-2 text-md text-left text-gray-midtone">{incentive.description}</p>
+                                
+                                <div key={incentive.name} className="text-center lg:block lg:text-center">
+                                    {/* <div className="sm:flex-shrink-0">
+                                    <div className="flow-root">
+                                        <Image width={100} height={100} src={incentive.imageSrc} alt=""/>
+                                    </div> 
+                                </div> */}
+                                    <div className="sm:flex-shrink-0">
+                                        <div className="bg-white w-16 h-16 sm:w-20 sm:h-20 drop-shadow-sm rounded-2xl flex items-center">
+                                            <div className="text-3xl sm:text-4xl mx-auto">{incentive.emoji}</div>
                                         </div>
                                     </div>
-                                </Parallax>
+                                    <div className="mt-4 sm:mt-6 lg:mt-8 lg:ml-0">
+                                        <h3 className="text-2xl text-left font-medium text-gray-dark">{incentive.name}</h3>
+                                        <p className="mt-2 text-md text-left text-gray-midtone">{incentive.description}</p>
+                                    </div>
+                                </div>
                             ))}
                         </div>
                     </div>
                 </div>
-                <Parallax>
-                    <div className="mx-auto flex flex-col items-center justify-center p-4 py-36">
-                        <h1 className="text-4xl font-bold leading-normal text-gray-dark md:text-[3rem]">
-                            Find the best deals
-                        </h1>
-                        <p className="text-xl md:text-2xl md:leading-normal max-w-md text-center text-gray-midtone mb-8 mt-2">
-                            Use deal score to save time and money.
-                        </p>
-                        <Image width={525} height={981} src="/images/event.png" alt=""/>
-                    </div>
-                </Parallax>
-                <Parallax>
-                    <div className="mx-auto bg-gray-dark flex flex-col items-center justify-center p-4 py-36">
-                        <h1 className="text-4xl font-bold leading-normal text-white md:text-[3rem]">
-                            Check out your view
-                        </h1>
-                        <p className="text-xl md:text-2xl md:leading-normal max-w-md text-center text-silver-dark/70 mb-8 mt-2">
-                            Know exactly what to expect.
-                        </p>
-                        <Image width={525} height={981} src="/images/vfs.png" alt="" />
-                    </div>
-                </Parallax>
-                <Parallax>
-                    <div className="mx-auto flex flex-col items-center justify-center p-4 py-36">
-                        <h1 className="text-4xl font-bold leading-normal text-gray-dark md:text-[3rem]">
-                            Get in with your phone
-                        </h1>
-                        <p className="text-xl md:text-2xl md:leading-normal max-w-md text-center text-gray-midtone mb-8 mt-2">
-                            Manage and scane your tickets with ease.
-                        </p>
-                        <Image width={525} height={981} src="/images/scanning.png" alt="" />
-                    </div>                            
-                </Parallax>
+                <div className="mx-auto flex flex-col items-center justify-center p-4 py-36">
+                    <h1 className="text-4xl font-bold leading-normal text-gray-dark md:text-[3rem]">
+                        Find the best deals
+                    </h1>
+                    <p className="text-xl md:text-2xl md:leading-normal max-w-md text-center text-gray-midtone mb-8 mt-2">
+                        Use deal score to save time and money.
+                    </p>
+                    <Image width={525} height={981} src="/images/event.png" alt=""/>
+                </div>
+                <div className="mx-auto bg-gray-dark flex flex-col items-center justify-center p-4 py-36">
+                    <h1 className="text-4xl font-bold leading-normal text-white md:text-[3rem]">
+                        Check out your view
+                    </h1>
+                    <p className="text-xl md:text-2xl md:leading-normal max-w-md text-center text-silver-dark/70 mb-8 mt-2">
+                        Know exactly what to expect.
+                    </p>
+                    <Image width={525} height={981} src="/images/vfs.png" alt="" />
+                </div>
+                <div className="mx-auto flex flex-col items-center justify-center p-4 py-36">
+                    <h1 className="text-4xl font-bold leading-normal text-gray-dark md:text-[3rem]">
+                        Get in with your phone
+                    </h1>
+                    <p className="text-xl md:text-2xl md:leading-normal max-w-md text-center text-gray-midtone mb-8 mt-2">
+                        Manage and scane your tickets with ease.
+                    </p>
+                    <Image width={525} height={981} src="/images/scanning.png" alt="" />
+                </div>                            
                 <div className="mx-auto bg-sg-gold-light-24 flex min-h-[85vh] flex-col items-center justify-center p-4">
                     <h1 className="text-5xl font-bold leading-normal text-gray-dark md:text-[5rem]">
                         Let&#39;s Go
