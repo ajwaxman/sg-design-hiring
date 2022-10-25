@@ -33,7 +33,7 @@ const Home: NextPage = () => {
             </Head>
 
             <main>
-                <div className="bg-blend-overlay bg-[#232323] grayscale bg-[url('/images/portland-2.jpg')] bg-cover bg-center mx-auto flex min-h-[75vh] flex-col items-center justify-center p-4">
+                <div className="bg-blend-overlay bg-[#232323] grayscale bg-[url('/images/portland.jpg')] bg-cover bg-center mx-auto flex min-h-[75vh] flex-col items-center justify-center p-4">
                     <h1 className="text-4xl font-bold leading-normal drop-shadow-lg text-white md:text-[5rem]">
                         SeatGeek Design
                     </h1>
@@ -88,12 +88,12 @@ const Home: NextPage = () => {
                 </div>
                 <div className="mx-auto flex flex-col items-center justify-center p-4 py-36">
                     <h1 className="text-4xl font-bold leading-normal text-gray-dark md:text-[3rem]">
-                        Check out your view
+                        Find the best deals
                     </h1>
                     <p className="text-xl md:text-2xl md:leading-normal max-w-md text-center text-gray-midtone mb-8 mt-2">
-                        Know exactly what to expect.
+                        Use deal score to save time and money.
                     </p>
-                    <Image width={525} height={981} src="/images/vfs.png" alt=""/>
+                    <Image width={525} height={981} src="/images/event.png" alt=""/>
                 </div>
                 <div className="mx-auto bg-gray-dark flex flex-col items-center justify-center p-4 py-36">
                     <h1 className="text-4xl font-bold leading-normal text-white md:text-[3rem]">
@@ -109,7 +109,7 @@ const Home: NextPage = () => {
                         Get in with your phone
                     </h1>
                     <p className="text-xl md:text-2xl md:leading-normal max-w-md text-center text-gray-midtone mb-8 mt-2">
-                        Manage and scane your tickets with ease
+                        Manage and scane your tickets with ease.
                     </p>
                     <Image width={525} height={981} src="/images/scanning.png" alt=""/>
                 </div>
