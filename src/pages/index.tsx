@@ -30,7 +30,7 @@ const Home: NextPage = () => {
             <Head>
                 <title>SeatGeek Design</title>
                 <meta name="description" content="Come join the SeatGeek design team!" />
-                <meta property="og:title" content="iPhone" />
+                <meta property="og:title" content="Come join the SeatGeek design team!" />
                 <meta property="og:image" content="url('/images/portland.jpg')" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
