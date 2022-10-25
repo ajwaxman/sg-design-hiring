@@ -12,16 +12,16 @@ const Home: NextPage = () => {
 
             <main>
                 <div className="mx-auto flex min-h-[85vh] flex-col items-center justify-center p-4">
-                    <h1 className="text-5xl font-extrabold leading-normal text-gray-700 md:text-[5rem]">
+                    <h1 className="text-5xl font-bold leading-normal text-gray-dark md:text-[5rem]">
                         SeatGeek Design
                     </h1>
-                    <p className="text-2xl text-gray-900">Live event ticketing sucks. We're on a mission to change that.</p>
+                    <p className="text-2xl text-gray-midtone">Live event ticketing sucks. We're on a mission to change that.</p>
                 </div>
-                <div className="bg-gray-900 mx-auto flex min-h-[85vh] flex-col items-center justify-center p-4">
-                    <h1 className="text-5xl font-extrabold leading-normal text-white md:text-[5rem]">
+                <div className="bg-gray-dark mx-auto flex min-h-[85vh] flex-col items-center justify-center p-4">
+                    <h1 className="text-5xl font-bold leading-normal text-white md:text-[5rem]">
                         SeatGeek Design
                     </h1>
-                    <p className="text-2xl text-gray-400">We handle the tickets. So fans can fan.</p>
+                    <p className="text-2xl text-silver-light">We handle the tickets. So fans can fan.</p>
                 </div>
             </main>
         </>
