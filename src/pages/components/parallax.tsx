@@ -1,3 +1,5 @@
+// From https://samuelkraft.com/blog/spring-parallax-framer-motion-guide
+
 import { useState, useRef, useLayoutEffect, ReactNode } from 'react'
 import { motion, useScroll, useTransform, useSpring, useReducedMotion } from 'framer-motion'
 
