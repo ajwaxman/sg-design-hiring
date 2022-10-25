@@ -15,7 +15,7 @@ const Home: NextPage = () => {
                     <h1 className="text-5xl font-extrabold leading-normal text-gray-700 md:text-[5rem]">
                         SeatGeek Design
                     </h1>
-                    <p className="text-2xl text-gray-700">We handle the tickets. So fans can fan.</p>
+                    <p className="text-2xl text-gray-900">Live event ticketing sucks. We're on a mission to change that.</p>
                 </div>
                 <div className="bg-gray-900 mx-auto flex min-h-[85vh] flex-col items-center justify-center p-4">
                     <h1 className="text-5xl font-extrabold leading-normal text-white md:text-[5rem]">
