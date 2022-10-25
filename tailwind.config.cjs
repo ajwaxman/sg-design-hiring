@@ -42,7 +42,7 @@ module.exports = {
       'gray-light': '#767575',
       'silver-dark': '#DEDDDB',
       'silver-light': '#F5F5F4',
-      'gatorade': '#DB1600',
+      'gatorade': '#FF5B49',
       'gatorade-dark': '#DB1600',
       'sg-purple': '#9837FF',
       'sg-purple-dark': '#6400CF',
