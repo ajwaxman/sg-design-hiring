@@ -54,7 +54,7 @@ const Home: NextPage = () => {
                         animate={{ y: 15, opacity: 1 }}
                         initial={{ y: 0, opacity: 0 }}
                         transition={{ ease: "easeIn", duration: 0.6, delay: 0.6 }}
-                        className="rounded-md shadow mt-8">
+                        className="rounded-md shadow mt-4 sm:mt-8">
                         <a
                             href="#"
                             className="flex w-full items-center justify-center rounded-md border 
@@ -83,7 +83,7 @@ const Home: NextPage = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ ease: "easeOut", duration: 1 }}
                             className="text-3xl width-full px-8 text-left font-bold leading-normal md:text-[1.75rem] pb-16">
-                            Our Values
+                            Company Values
                         </motion.div>
                         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-y-16 px-8 gap-x-16 lg:max-w-none lg:grid-cols-3">
                             {incentives.map((incentive) => (
