@@ -31,7 +31,7 @@ const Home: NextPage = () => {
                 <title>SeatGeek Design</title>
                 <meta name="description" content="Come join the SeatGeek design team!" />
                 <meta property="og:title" content="Come join the SeatGeek design team!" />
-                <meta property="og:image" content="url('/images/portland.jpg')" />
+                <meta property="og:image" content="https://sg-design-hiring.vercel.app/images/portland.jpg" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
