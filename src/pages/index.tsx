@@ -37,11 +37,24 @@ const Home: NextPage = () => {
 
             <main>
                 <div className="bg-blend-overlay bg-[#232323] grayscale bg-[url('/images/portland.jpg')] bg-cover bg-center mx-auto flex min-h-[90vh] flex-col items-center justify-center p-4">
-                    <h1 className="text-4xl font-bold leading-normal drop-shadow-lg text-white md:text-[5rem]">
+                    <motion.div 
+                        animate={{ y: 15, opacity: 1 }}
+                        initial={{ y: 0, opacity: 0 }}
+                        transition={{ ease: "easeIn", duration: 0.6 }}
+                        className="text-4xl font-bold leading-tight drop-shadow-lg text-white md:text-[5rem]">
                         SeatGeek Design
-                    </h1>
-                    <p className="text-xl text-silver-dark drop-shadow-lg">Help the world experience more live.</p>
-                    <div className="rounded-md shadow mt-8">
+                    </motion.div>
+                    <motion.div 
+                        animate={{ y: 15, opacity: 1 }}
+                        initial={{ y: 0, opacity: 0 }}
+                        transition={{ ease: "easeIn", duration: 0.6, delay: 0.4 }}
+                        className="text-xl sm:text-3xl text-silver-dark/80 drop-shadow-lg">Help the world experience more live.
+                    </motion.div>
+                    <motion.div 
+                        animate={{ y: 15, opacity: 1 }}
+                        initial={{ y: 0, opacity: 0 }}
+                        transition={{ ease: "easeIn", duration: 0.6, delay: 0.6 }}
+                        className="rounded-md shadow mt-8">
                         <a
                             href="#"
                             className="flex w-full items-center justify-center rounded-md border 
@@ -54,7 +67,7 @@ const Home: NextPage = () => {
                         >
                             View openings
                         </a>
-                    </div>
+                    </motion.div>
                 </div>
                 {/* <div className="bg-gray-dark mx-auto flex min-h-[85vh] flex-col items-center justify-center p-4">
                     <h1 className="text-5xl font-bold leading-normal text-white md:text-[5rem]">
