@@ -30,7 +30,7 @@ const Home: NextPage = () => {
             <Head>
                 <title>SeatGeek Design</title>
                 <meta property="og:title" content="Come join the SeatGeek design team!" />
-                <meta name="description" content="Ticketing sucks. Join us in our mission to make it better." />
+                <meta name="description" content="Ticketing sucks. Join us in our mission to make it." />
                 <meta property="og:image" content="https://sg-design-hiring.vercel.app/images/portland.jpg" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
@@ -86,7 +86,7 @@ const Home: NextPage = () => {
                                             <div className="text-3xl sm:text-3xl mx-auto">{incentive.emoji}</div>
                                         </div>
                                     </div>
-                                    <div className="mt-4 sm:mt-6 lg:mt-8 lg:ml-0">
+                                    <div className="mt-6 sm:mt-6 lg:mt-8 lg:ml-0">
                                         <h3 className="text-2xl text-left font-medium text-gray-dark">{incentive.name}</h3>
                                         <p className="mt-2 text-md text-left text-gray-midtone">{incentive.description}</p>
                                     </div>
@@ -94,7 +94,23 @@ const Home: NextPage = () => {
                             ))}
                         </div>
                     </div>
-                </div >
+                </div>
+                {/* <div className="mx-auto bg-gray-dark justify-center p-4 py-20 sm:py-32 max-h-screen overflow-hidden">
+                    <motion.div
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ ease: "easeOut", duration: 1 }}
+                        className="text-center flex flex-col items-center"
+                    >
+                        <h1 className="text-4xl font-bold leading-normal text-white md:text-[3rem]">
+                            Check out your view
+                        </h1>
+                        <p className="text-xl md:text-2xl md:leading-normal max-w-md text-center text-silver-dark/70 mb-8 mt-2">
+                            Know exactly what to expect
+                        </p>
+                        <Image width={525} height={981} src="/images/vfs.png" alt="" />
+                    </motion.div>
+                </div> */}
                 <div className="mx-auto justify-center p-4 py-20 sm:py-36">
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
