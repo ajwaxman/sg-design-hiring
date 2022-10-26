@@ -63,18 +63,23 @@ const Home: NextPage = () => {
                     <p className="text-2xl text-silver-dark">Help the world experience more live.</p>
                 </div> */}
                 <div className="bg-sg-gold-light-08 mx-auto flex min-content flex-col items-center justify-center">
-                    <motion.div 
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ ease: "easeOut", duration: 1.5 }}
+                    <div 
                         className="mx-auto max-w-6xl py-24 sm:px-2 sm:py-32 lg:px-4">
-                        <h2 className="text-3xl width-full px-8 text-left font-bold leading-normal md:text-[1.75rem] pb-16">
+                        <motion.div 
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ ease: "easeOut", duration: 1 }}
+                            className="text-3xl width-full px-8 text-left font-bold leading-normal md:text-[1.75rem] pb-16">
                             Our Values
-                        </h2>
+                        </motion.div>
                         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-y-16 px-8 gap-x-16 lg:max-w-none lg:grid-cols-3">
                             {incentives.map((incentive) => (
                                 
-                                <div key={incentive.name} className="text-center lg:block lg:text-center">
+                                <motion.div 
+                                    initial={{ opacity: 0, y: 50 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ ease: "easeOut", duration: 1.5 }}
+                                    key={incentive.name} className="text-center lg:block lg:text-center">
                                     <div 
                                         className="sm:flex-shrink-0">
                                         <div className="bg-white w-16 h-16 sm:w-16 sm:h-16  drop-shadow-md sm:drop-shadow-sm rounded-2xl flex items-center">
@@ -85,10 +90,10 @@ const Home: NextPage = () => {
                                         <h3 className="text-2xl text-left font-medium text-gray-dark">{incentive.name}</h3>
                                         <p className="mt-2 text-md text-left text-gray-midtone">{incentive.description}</p>
                                     </div>
-                                </div>
+                                </motion.div>
                             ))}
                         </div>
-                    </motion.div>
+                    </div>
                 </div >
                 <div className="mx-auto justify-center p-4 py-20 sm:py-36">
                     <motion.div
