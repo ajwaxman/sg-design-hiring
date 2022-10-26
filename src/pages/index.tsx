@@ -30,7 +30,7 @@ const Home: NextPage = () => {
             <Head>
                 <title>SeatGeek Design</title>
                 <meta property="og:title" content="Come join the SeatGeek design team!" />
-                <meta name="description" content="Ticketing sucks. Join us in our mission to make it." />
+                <meta name="description" content="Ticketing sucks. We need your help to make it better." />
                 <meta property="og:image" content="https://sg-design-hiring.vercel.app/images/portland.jpg" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
