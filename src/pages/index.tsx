@@ -36,7 +36,7 @@ const Home: NextPage = () => {
             </Head>
 
             <main>
-                <div className="bg-blend-overlay bg-[#232323] grayscale bg-[url('/images/portland.jpg')] bg-cover bg-center mx-auto flex min-h-[75vh] flex-col items-center justify-center p-4">
+                <div className="bg-blend-overlay bg-[#232323] grayscale bg-[url('/images/portland.jpg')] bg-cover bg-center mx-auto flex min-h-[90vh] flex-col items-center justify-center p-4">
                     <h1 className="text-4xl font-bold leading-normal drop-shadow-lg text-white md:text-[5rem]">
                         SeatGeek Design
                     </h1>
@@ -66,7 +66,7 @@ const Home: NextPage = () => {
                     <motion.div 
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ ease: "easeOut", duration: 1 }}
+                        transition={{ ease: "easeOut", duration: 1.5 }}
                         className="mx-auto max-w-6xl py-24 sm:px-2 sm:py-32 lg:px-4">
                         <h2 className="text-3xl width-full px-8 text-left font-bold leading-normal md:text-[1.75rem] pb-16">
                             Our Values
@@ -75,15 +75,10 @@ const Home: NextPage = () => {
                             {incentives.map((incentive) => (
                                 
                                 <div key={incentive.name} className="text-center lg:block lg:text-center">
-                                    {/* <div className="sm:flex-shrink-0">
-                                    <div className="flow-root">
-                                        <Image width={100} height={100} src={incentive.imageSrc} alt=""/>
-                                    </div> 
-                                </div> */}
                                     <div 
                                         className="sm:flex-shrink-0">
-                                        <div className="bg-white w-16 h-16 sm:w-20 sm:h-20 drop-shadow-sm rounded-2xl flex items-center">
-                                            <div className="text-3xl sm:text-4xl mx-auto">{incentive.emoji}</div>
+                                        <div className="bg-white w-16 h-16 sm:w-16 sm:h-16  drop-shadow-md sm:drop-shadow-sm rounded-2xl flex items-center">
+                                            <div className="text-3xl sm:text-3xl mx-auto">{incentive.emoji}</div>
                                         </div>
                                     </div>
                                     <div className="mt-4 sm:mt-6 lg:mt-8 lg:ml-0">
@@ -95,7 +90,7 @@ const Home: NextPage = () => {
                         </div>
                     </motion.div>
                 </div >
-                <div className="mx-auto justify-center p-4 py-36">
+                <div className="mx-auto justify-center p-4 py-20 sm:py-36">
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -106,12 +101,12 @@ const Home: NextPage = () => {
                             Find the best deals
                         </h1>
                         <p className="text-xl md:text-2xl md:leading-normal max-w-md text-center text-gray-midtone mb-8 mt-2">
-                            Use deal score to save time and money.
+                            Use deal score to save time and money
                         </p>
                         <Image width={525} height={981} src="/images/event.png" alt="" />
                     </motion.div>
                 </div>
-                <div className="mx-auto bg-gray-dark justify-center p-4 py-36">
+                <div className="mx-auto bg-gray-dark justify-center p-4 py-20 sm:py-36">
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -122,12 +117,12 @@ const Home: NextPage = () => {
                             Check out your view
                         </h1>
                         <p className="text-xl md:text-2xl md:leading-normal max-w-md text-center text-silver-dark/70 mb-8 mt-2">
-                            Know exactly what to expect.
+                            Know exactly what to expect
                         </p>
                         <Image width={525} height={981} src="/images/vfs.png" alt="" />
                     </motion.div>
                 </div>
-                <div className="mx-auto justify-center p-4 py-36">
+                <div className="mx-auto justify-center py-20 sm:py-36">
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -135,10 +130,10 @@ const Home: NextPage = () => {
                         className="text-center flex flex-col items-center"
                     >
                         <h1 className="text-4xl font-bold leading-normal text-gray-dark md:text-[3rem]">
-                            Manage and scan tickets with ease.
+                            Get in with your phone
                         </h1>
                         <p className="text-xl md:text-2xl md:leading-normal max-w-md text-center text-gray-midtone mb-8 mt-2">
-                            Manage and scan tickets with ease.
+                            Manage and scan tickets with ease
                         </p>
                         <Image width={525} height={981} src="/images/scanning.png" alt="" />
                     </motion.div>
@@ -148,6 +143,7 @@ const Home: NextPage = () => {
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ ease: "easeOut", duration: 1 }}
+                        className="mx-auto flex flex-col items-center justify-center"
                         >
                         <h1 className="text-5xl font-bold leading-normal text-gray-dark md:text-[5rem]">
                             Let&#39;s Go
